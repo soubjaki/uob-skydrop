@@ -1,0 +1,9 @@
+ M models/x500_base/model.sdf
+?? models/uob_training_campus/
+?? models/x650_skydrop/
+?? models/x650_skydrop_base/
+?? models/x650_skydrop_base_before_real_frame/
+?? models/x650_skydrop_v2/
+?? models/x650_skydrop_v2_base/
+?? worlds/uob.sdf
+?? worlds/uob_training.sdf

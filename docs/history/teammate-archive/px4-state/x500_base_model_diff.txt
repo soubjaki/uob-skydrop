@@ -1,0 +1,10 @@
+diff --git a/models/x500_base/model.sdf b/models/x500_base/model.sdf
+index bdeb665..49eb170 100644
+--- a/models/x500_base/model.sdf
++++ b/models/x500_base/model.sdf
+@@ -603,3 +603,5 @@
+     </joint>
+   </model>
+ </sdf>
++
++

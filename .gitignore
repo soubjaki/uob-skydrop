@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# PX4 flight logs (large; upload to review.px4.io or keep chosen ones under results/ with `git add -f`)
+*.ulg
+
+# ROS 2 workspace build output (Phase 4 onward)
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
