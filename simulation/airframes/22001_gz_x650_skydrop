@@ -1,0 +1,66 @@
+#!/bin/sh
+#
+# @name Gazebo UOB SkyDrop X650 V2
+#
+# @type Quadrotor
+#
+# Custom airframe for the UOB SkyDrop X650 simulation model (x650_skydrop_v2).
+# Number 22001 sits in PX4's reserved custom-model range [22000, 22999].
+# It must also be listed in this folder's CMakeLists.txt, or PX4 will not
+# build it into the ROMFS (simulation/install.sh does both).
+#
+
+. ${R}etc/init.d/rc.mc_defaults
+
+PX4_SIMULATOR=${PX4_SIMULATOR:=gz}
+PX4_GZ_WORLD=${PX4_GZ_WORLD:=uob_training}
+PX4_SIM_MODEL=${PX4_SIM_MODEL:=x650_skydrop_v2}
+
+param set-default SIM_GZ_EN 1
+
+param set-default CA_AIRFRAME 0
+param set-default CA_ROTOR_COUNT 4
+
+# Rotor positions match x650_skydrop_v2_base (0.22981 m from center on each axis,
+# 650 mm motor-to-motor wheelbase), not the x500's 0.174 m.
+param set-default CA_ROTOR0_PX 0.22981
+param set-default CA_ROTOR0_PY 0.22981
+param set-default CA_ROTOR0_KM 0.05
+
+param set-default CA_ROTOR1_PX -0.22981
+param set-default CA_ROTOR1_PY -0.22981
+param set-default CA_ROTOR1_KM 0.05
+
+param set-default CA_ROTOR2_PX 0.22981
+param set-default CA_ROTOR2_PY -0.22981
+param set-default CA_ROTOR2_KM -0.05
+
+param set-default CA_ROTOR3_PX -0.22981
+param set-default CA_ROTOR3_PY 0.22981
+param set-default CA_ROTOR3_KM -0.05
+
+param set-default SIM_GZ_EC_FUNC1 101
+param set-default SIM_GZ_EC_FUNC2 102
+param set-default SIM_GZ_EC_FUNC3 103
+param set-default SIM_GZ_EC_FUNC4 104
+
+param set-default SIM_GZ_EC_MIN1 150
+param set-default SIM_GZ_EC_MIN2 150
+param set-default SIM_GZ_EC_MIN3 150
+param set-default SIM_GZ_EC_MIN4 150
+
+param set-default SIM_GZ_EC_MAX1 1000
+param set-default SIM_GZ_EC_MAX2 1000
+param set-default SIM_GZ_EC_MAX3 1000
+param set-default SIM_GZ_EC_MAX4 1000
+
+# Hover throttle from the model's own numbers:
+# hover rotor speed 404.659 rad/s / maxRotVelocity 628.3 rad/s = 0.644
+# (at 3.226 kg total mass; recheck when payload hardware is added)
+param set-default MPC_THR_HOVER 0.644
+param set-default NAV_DLL_ACT 2
+
+# Drag specific force
+param set-default EKF2_BCOEF_X 0.0
+param set-default EKF2_BCOEF_Y 0.0
+param set-default EKF2_MCOEF 0.12
