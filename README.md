@@ -94,7 +94,7 @@ PX4 Autopilot v1.18 (beta, `main` at `fe87271f9c`) · Gazebo Harmonic · QGround
 
 ## Team
 
-Khaled Hamdash, Omar Soobjaki, Tamam Khaled. Faculty of Engineering, University of Balamand. Supervisor: Dr. Katia Karam.
+Khaled Hamdash, Omar Soubjaki, Tamam Khaled. Faculty of Engineering, University of Balamand. Supervisor: Dr. Katia Karam.
 
 ## Credits
 
