@@ -1,0 +1,5 @@
+# Classic MAVSDK-Python API (System, drone.action, drone.telemetry).
+# Since 2026, the plain "mavsdk" package (v4 and later) is a different, native
+# API, and `pip install mavsdk` breaks these scripts. The classic API continues
+# as "mavsdk-grpc" (import mavsdk_grpc), which bundles its own mavsdk_server.
+mavsdk-grpc>=4.0.5
