@@ -40,8 +40,8 @@ GUI_PID=$!
 WATCHDOG_PID=$!
 
 # PX4 runs in the foreground so the pxh> shell stays interactive.
-PX4_HOME_LAT=34.36628 \
-PX4_HOME_LON=35.78218 \
+PX4_HOME_LAT=34.365812 \
+PX4_HOME_LON=35.782627 \
 PX4_HOME_ALT=262 \
 PX4_GZ_WORLD=uob_training \
 PX4_SYS_AUTOSTART=22001 \

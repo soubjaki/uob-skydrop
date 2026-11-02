@@ -276,7 +276,7 @@ Phase 8 swaps the ChatGPT-generated placeholder campus for UOB's real buildings 
 
 **8.3 Prepare the model in Blender. Trace each 2D plan's outline and extrude it to that building's height.** Export the buildings as `.dae` or `.obj` for looks; the cameras see this mesh. Add simple box collisions per building for physics; detailed meshes make slow, buggy collisions.
 
-**8.4 Build the world.** Package it as a model `uob_campus` and make `uob_campus.sdf` from a copy of `uob_training.sdf`. Keep its origin (lat 34.36628, lon 35.78218, alt 262 m) and line the model up with that point.
+**8.4 Build the world.** Package it as a model `uob_campus` and make `uob_campus.sdf` from a copy of `uob_training.sdf`. Keep its origin (lat 34.365812, lon 35.782627, alt 262 m) and line the model up with that point.
 
 **8.5 Place delivery pads** (the Phase 6 pad model) at the real stops the team picks, such as the cafeteria and faculty buildings named in the report's stakeholder list.
 

@@ -36,7 +36,7 @@ Details: [progress record](docs/progress-record.md) · [roadmap](docs/roadmap.md
 | Propulsion | Max 628.3 rad/s, motor constant 4.83e-05; hover at 404.7 rad/s, so hover throttle 0.644 |
 | Sensors | IMU 250 Hz, barometer 50 Hz, magnetometer 100 Hz, GPS 30 Hz, with realistic noise |
 | Not on the model yet | Jetson, depth camera, gripper, package (added in Phases 4–7) |
-| World | `uob_training`: placeholder campus at 34.36628 N, 35.78218 E, 262 m |
+| World | `uob_training`: placeholder campus at 34.365812 N, 35.782627 E, 262 m |
 
 ## Repository layout
 
